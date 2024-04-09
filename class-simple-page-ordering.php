@@ -420,7 +420,7 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 					esc_url( $move_under_grandparent_link ),
 					sprintf(
 						/* translators: %s: parent page/post title */
-						__( 'Move out from under %s' ),
+						__( 'Move out from under %s', 'simple-page-ordering' ),
 						get_the_title( $parent_id )
 					)
 				);
@@ -455,7 +455,7 @@ if ( ! class_exists( 'Simple_Page_Ordering' ) ) :
 					esc_url( $move_under_sibling_link ),
 					sprintf(
 						/* translators: %s: sibling page/post title */
-						__( 'Move under %s' ),
+						__( 'Move under %s', 'simple-page-ordering' ),
 						get_the_title( $sibling )
 					)
 				);
