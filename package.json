@@ -1,20 +1,19 @@
 {
   "name": "simple-page-ordering",
   "description": "Order your pages and other hierarchical post types with simple drag and drop right from the standard page list.",
-  "version": "2.5.1",
-  "author": "10up <opensource@10up.com>",
-  "license": "GPLv2 ( or later )",
+  "version": "2.7.0",
+  "author": "10up <opensource@10up.com> (https://10up.com)",
+  "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@10up/babel-preset-default": "^2.0.4",
-    "@10up/cypress-wp-utils": "github:10up/cypress-wp-utils#build",
-    "@wordpress/dependency-extraction-webpack-plugin": "^3.4.1",
-    "@wordpress/env": "^5.3.0",
-    "@wordpress/eslint-plugin": "^12.9.0",
-    "10up-toolkit": "^4.3.1",
-    "cypress": "^11.2.0",
-    "cypress-mochawesome-reporter": "^3.4.0",
-    "node-sass": "^9.0.0",
-    "node-wp-i18n": "^1.2.6"
+    "@10up/cypress-wp-utils": "^0.2.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^5.1.0",
+    "@wordpress/env": "^9.2.0",
+    "10up-toolkit": "^5.2.2",
+    "cypress": "^13.0.0",
+    "cypress-mochawesome-reporter": "^3.6.0",
+    "mochawesome-json-to-md": "^0.7.2",
+    "node-wp-i18n": "^1.2.7",
+    "prettier": "^2.8.8"
   },
   "scripts": {
     "cypress:open": "cypress open --config-file tests/cypress/config.config.js",
@@ -34,5 +33,8 @@
     "entry": {
       "simple-page-ordering": "./assets/js/src/simple-page-ordering.js"
     }
+  },
+  "dependencies": {
+    "@wordpress/html-entities": "^3.50.0"
   }
 }

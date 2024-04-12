@@ -3,7 +3,7 @@ Contributors:      10up, jakemgold, welcher, helen, thinkoomph, jeffpaul
 Donate link:       http://10up.com/plugins/simple-page-ordering-wordpress/
 Tags:              order, re-order, ordering, pages, page, manage, menu_order, hierarchical, ajax, drag-and-drop, admin
 Tested up to:      6.5
-Stable tag:        2.5.1
+Stable tag:        2.7.0
 License:           GPLv2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -107,6 +107,49 @@ Yes. The plugin registers the REST endpoint `simple-page-ordering/v1/page_orderi
 1. Processing indicator
 
 == Changelog ==
+
+= 2.7.0 - 2024-04-03 =
+* **Added:** Ability to modify the page hierarchy (props [@amityweb](https://github.com/amityweb), [@jeffpaul](https://github.com/jeffpaul), [@peterwilsoncc](https://github.com/peterwilsoncc), [@shannonmfisher](https://github.com/shannonmfisher), [@ankitguptaindia](https://github.com/ankitguptaindia), [@faisal-alvi](https://github.com/faisal-alvi) via [#172](https://github.com/10up/simple-page-ordering/pull/172)).
+* **Added:** Support for the WordPress.org plugin preview (props [@dkotter](https://github.com/dkotter), [@jeffpaul](https://github.com/jeffpaul) via [#183](https://github.com/10up/simple-page-ordering/pull/183)).
+* **Changed:** Replaced custom HTML entity decoding code in favor of the `@wordpress/html-entities` package (props [@helen](https://github.com/helen), [@jeffpaul](https://github.com/jeffpaul), [@psorensen](https://github.com/psorensen), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#189](https://github.com/10up/simple-page-ordering/pull/189)).
+* **Changed:** Bump minimum `node` version from `16` to `20` and clean up NPM dependencies (props [@Sidsector9](https://github.com/Sidsector9), [@dkotter](https://github.com/dkotter) via [#188](https://github.com/10up/simple-page-ordering/pull/188)).
+* **Changed:** Updated CODEOWNERS (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [#186](https://github.com/10up/simple-page-ordering/pull/186)).
+* **Changed:** Upgrade the download-artifact from v3 to v4 (props [@iamdharmesh](https://github.com/iamdharmesh), [@jeffpaul](https://github.com/jeffpaul) via [#194](https://github.com/10up/simple-page-ordering/pull/194)).
+* **Changed:** Replaced [lee-dohm/no-response](https://github.com/lee-dohm/no-response) with [actions/stale](https://github.com/actions/stale) to help with closing no-response/stale issues (props [@jeffpaul](https://github.com/jeffpaul), [@dkotter](https://github.com/dkotter) via [@195](https://github.com/10up/simple-page-ordering/pull/195)).
+* **Changed:** Disabled auto sync pull requests with target branch (props [@iamdharmesh](https://github.com/iamdharmesh), [@jeffpaul](https://github.com/jeffpaul) via [#196](https://github.com/10up/simple-page-ordering/pull/196)).
+* **Security:** Bump `@babel/traverse` from `7.20.12` to `7.23.6` (props [@dependabot](https://github.com/apps/dependabot), [@ravinderk](https://github.com/ravinderk) via [#184](https://github.com/10up/simple-page-ordering/pull/184)).
+* **Security:** Bump `sharp` from `0.30.7` to `0.32.1` (props [@dependabot](https://github.com/apps/dependabot), [@Sidsector9](https://github.com/Sidsector9) via [#182](https://github.com/10up/simple-page-ordering/pull/184)).
+* **Security:** Bump `10up-toolkit` from `4.3.1` to `5.2.2` (props [@dependabot](https://github.com/apps/dependabot), [@Sidsector9](https://github.com/Sidsector9) via [#182](https://github.com/10up/simple-page-ordering/pull/182)).
+
+= 2.6.3 - 2023-11-09 =
+* **Fix:** Deployment issue with version 2.6.2 (props [@Sidsector9](https://github.com/Sidsector9), [@dkotter](https://github.com/dkotter) via [#181](https://github.com/10up/simple-page-ordering/pull/181))
+
+= 2.6.2 - 2023-11-09 =
+* **Changed:** Update the `wp-compat-validation-tool` composer package to version `0.3.1` which properly removes the `.git` directory (props [@Sidsector9](https://github.com/Sidsector9), [@dkotter](https://github.com/dkotter) via [#180](https://github.com/10up/simple-page-ordering/pull/180)).
+
+= 2.6.1 - 2023-11-08 =
+* **Changed:** Bump WordPress "tested up to" version 6.4 (props [@jeffpaul](https://github.com/jeffpaul), [@qasumitbagthariya](https://github.com/qasumitbagthariya), [@faisal-alvi](https://github.com/faisal-alvi) via [#177](https://github.com/10up/simple-page-ordering/pull/177)).
+* **Changed:** Remove the .git directory from the `10up-lib` directory (props [@Sidsector9](https://github.com/Sidsector9), [@dkotter](https://github.com/dkotter) via [#175](https://github.com/10up/simple-page-ordering/pull/175)).
+* **Security:** Bumps `@babel/traverse` from `7.20.12` to `7.23.2` (props [@peterwilsoncc](https://github.com/peterwilsoncc) via [#170](https://github.com/10up/simple-page-ordering/pull/170)).
+
+= 2.6.0 - 2023-10-25 =
+* **Added:** A check for minimum required PHP version before loading the plugin (props [@vikrampm1](https://github.com/vikrampm1), [@kmgalanakis](https://github.com/kmgalanakis), [@Sidsector9](https://github.com/Sidsector9) via [#153](https://github.com/10up/simple-page-ordering/pull/153)).
+* **Added:** Mochawesome reporter added for Cypress test report (props [@iamdharmesh](https://github.com/iamdharmesh), [@jayedul](https://github.com/jayedul), [@faisal-alvi](https://github.com/faisal-alvi) via [#146](https://github.com/10up/simple-page-ordering/pull/146)).
+* **Added:** Repo Automator GitHub Action (props [@iamdharmesh](https://github.com/iamdharmesh), [@jeffpaul](https://github.com/jeffpaul) via [#158](https://github.com/10up/simple-page-ordering/pull/158)).
+* **Changed:** Bump WordPress "tested up to" version 6.3 (props [@jeffpaul](https://github.com/jeffpaul), [@QAharshalkadu](https://github.com/QAharshalkadu)).
+* **Changed:** Slightly change how some of our text is translated, passing in the post type (props [@dkotter](https://github.com/dkotter), [@ravinderk](https://github.com/ravinderk) via [#149](https://github.com/10up/simple-page-ordering/pull/149)).
+* **Changed:** Updates the Dependency Review GitHub Action to check for GPL-compatible licenses (props [@jeffpaul](https://github.com/jeffpaul), [@Sidsector9](https://github.com/Sidsector9) via [#147](https://github.com/10up/simple-page-ordering/pull/147)).
+* **Changed:** Updated 10up Cypress Utilities to 0.2.0 (props [@iamdharmesh](https://github.com/iamdharmesh), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#160](https://github.com/10up/simple-page-ordering/pull/160)).
+* **Fixed:** The "Are you sure..." popup text to be translatable (props [@kebbet](https://github.com/kebbet), [@bmarshall511](https://github.com/bmarshall511), [@dkotter](https://github.com/dkotter) via [#148](https://github.com/10up/simple-page-ordering/pull/148)).
+* **Fixed:** Remove code that was no longer needed (props [@dkotter](https://github.com/dkotter), [@ravinderk](https://github.com/ravinderk) via [#149](https://github.com/10up/simple-page-ordering/pull/149)).
+* **Fixed:** Add missing escaping (props [@dkotter](https://github.com/dkotter), [@ravinderk](https://github.com/ravinderk) via [#149](https://github.com/10up/simple-page-ordering/pull/149)).
+* **Fixed:** Fatal error following the introduction of a namespace (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@iamdharmesh](https://github.com/iamdharmesh), [@dkotter](https://github.com/dkotter) via [#162](https://github.com/10up/simple-page-ordering/pull/162)).
+* **Fixed:** Hidden pagination in admin screen when Sort by Order is clicked (props [@tlovett1](https://github.com/tlovett1), [@dkotter](https://github.com/dkotter), [@Sidsector9](https://github.com/Sidsector9) via [#165](https://github.com/10up/simple-page-ordering/pull/165)).
+* **Fixed:** Fatal errors on PHP 5.6 (props [@peterwilsoncc](https://github.com/peterwilsoncc), [@Sidsector9](https://github.com/Sidsector9), [@iamdharmesh](https://github.com/iamdharmesh) via [#166](https://github.com/10up/simple-page-ordering/pull/166)).
+* **Security:** Bump `word-wrap` from 1.2.3 to 1.2.4 (props [@dependabot](https://github.com/apps/dependabot), [@peterwilsoncc](https://github.com/peterwilsoncc) via [#](https://github.com/10up/simple-page-ordering/pull/151)).
+* **Security:** Bump `tough-cookie` from 4.1.2 to 4.1.3 (props [@faisal-alvi](https://github.com/faisal-alvi) via [#152](https://github.com/10up/simple-page-ordering/pull/152)).
+* **Security:** Bump `node-sass` from 7.0.3 to 9.0.0 (props [@faisal-alvi](https://github.com/faisal-alvi) via [#152](https://github.com/10up/simple-page-ordering/pull/152)).
+* **Security:** Bump `@cypress/request` from 2.88.11 to 3.0.0 to resolve SSRF issue (props [@faisal-alvi](https://github.com/faisal-alvi), [@iamdharmesh](https://github.com/iamdharmesh), [@peterwilsoncc](https://github.com/peterwilsoncc), [@dkotter](https://github.com/dkotter) via [#152](https://github.com/10up/simple-page-ordering/pull/152), [#160](https://github.com/10up/simple-page-ordering/pull/160)).
 
 = 2.5.1 - 2023-05-16 =
 * **Security:** Ensure we check user permissions properly in our REST endpoint (props [@mikhail-net](https://github.com/mikhail-net), [@dkotter](https://github.com/dkotter), [@peterwilsoncc](https://github.com/peterwilsoncc)).
